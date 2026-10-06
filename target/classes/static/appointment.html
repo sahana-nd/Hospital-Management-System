@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body class="center-page fade-in">
+
+    <div class="form-box">
+
+        <h2>Book Appointment</h2>
+
+        <input type="text" id="patientName" placeholder="Patient Name">
+
+        <select id="doctor" onchange="updateSpecialization()">
+            <option value="">Select Doctor</option>
+            <option>Dr. Sharma</option>
+            <option>Dr. Rao</option>
+            <option>Dr. Kumuda</option>
+            <option>Dr. Laya</option>
+        </select>
+
+        <input type="text" id="specialization" readonly placeholder="Specialization">
+        <input type="date" id="date">
+
+        <button onclick="bookAppointment()">Submit</button>
+
+    </div>
+
+</body>
+
+</html>
